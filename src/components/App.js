@@ -5,11 +5,31 @@ import { ContactForm } from './ContactForm';
 import { Filter } from './Filter';
 import { ContactList } from './ContactList';
 import { AppContainer, AppTitle, AppTitleContact } from './App.style';
+
+const storageKey = 'list-contacts';
 export class App extends Component {
   state = {
     contacts: [],
     filter: '',
   };
+
+  componentDidMount() {
+    const savedContacts = window.localStorage.getItem(storageKey);
+    if (savedContacts !== null) {
+      this.setState({
+        contacts: JSON.parse(savedContacts),
+      });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      window.localStorage.setItem(
+        'list-contacts',
+        JSON.stringify(this.state.contacts)
+      );
+    }
+  }
 
   addContact = newContact => {
     const { contacts } = this.state;

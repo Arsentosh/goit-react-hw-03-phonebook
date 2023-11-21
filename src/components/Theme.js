@@ -5,17 +5,19 @@ export const theme = {
     lightBlack: '#808080',
     violet: '#0900114a',
     Crimson: '#DC143C',
-    Indigo: '#4B0082',
+    Indigo: '#212121',
   },
 
   background: {
     white: '#ffff',
-    blue: '#4cacbf',
+    blue: '#4da6ff',
     lightBlue: '#97d3e6',
     lightBlueSecond: '#97deee',
     PowderBlue: '#B0E0E6',
     GreenYellow: '#ADFF2F',
     Tomato: '#FF6347',
+    Red: '#ffb3b3',
+    FocusRed: '#ff4d4d',
   },
 
   radii: {

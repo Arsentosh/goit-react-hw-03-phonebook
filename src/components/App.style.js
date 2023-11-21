@@ -7,8 +7,6 @@ export const AppContainer = styled.div`
   margin-bottom: ${p => p.theme.spasing(10)};
   border-radius: ${p => p.theme.radii.md};
   padding: ${p => p.theme.spasing(4)};
-  background-color: ${p => p.theme.background.lightBlue};
-  border: 0.5px solid ${p => p.theme.colors.violet};
 `;
 
 export const AppTitle = styled.h1`

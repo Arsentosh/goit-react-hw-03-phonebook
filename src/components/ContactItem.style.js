@@ -9,13 +9,13 @@ export const ContactItemLi = styled.li`
 export const ContactItemButton = styled.button`
   width: 60px;
   padding: ${p => p.theme.spasing(1)} ${p => p.theme.spasing(1)};
-  background-color: ${p => p.theme.background.Tomato};
+  background-color: ${p => p.theme.background.Red};
+  border: none;
   border-radius: 8px;
-  border: 1px solid ${p => p.theme.colors.Indigo};
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: ${p => p.theme.background.blue};
+    background-color: ${p => p.theme.background.FocusRed};
   }
 `;

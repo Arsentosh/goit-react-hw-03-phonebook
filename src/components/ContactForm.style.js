@@ -33,7 +33,7 @@ export const ContactFormButton = styled.button`
   padding: ${p => p.theme.spasing(2)} ${p => p.theme.spasing(2)};
   background-color: ${p => p.theme.background.white};
   border-radius: ${p => p.theme.radii.lg};
-  border: 1px solid ${p => p.theme.colors.Indigo};
+  border: 1px solid ${p => p.theme.colors.black};
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
